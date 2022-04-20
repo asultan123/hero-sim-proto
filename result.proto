@@ -1,7 +1,14 @@
-syntax = "proto3";
+syntax = "proto2";
 
 package message;
 
-message Message {
-    string id = 1;
+message Result {
+    optional string pass = 1;
+    optional uint64 dram_access = 2;
+    optional uint64 weight_access = 3;
+    optional uint64 ifmap_access = 4;
+    optional uint64 psum_access = 5;
+    optional float avg_util = 6;
+    optional float latency = 7;
+    optional uint64 sim_time = 8;
 }
