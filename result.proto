@@ -10,5 +10,6 @@ message Result {
     optional uint64 psum_access = 5;
     optional float avg_util = 6;
     optional uint64 latency = 7;
-    optional uint64 sim_time = 8;
+    optional uint64 macs = 8;
+    optional uint64 sim_time = 9;
 }
