@@ -13,4 +13,5 @@ message Result {
     optional uint64 macs = 8;
     optional uint64 sim_time = 9;
     optional uint64 dram_store_access = 10;
+    optional uint64 reuse_chain_accesses = 11;
 }
