@@ -4,7 +4,7 @@ package message;
 
 message Result {
     optional string valid = 1;
-    optional uint64 dram_access = 2;
+    optional uint64 dram_load_access = 2;
     optional uint64 weight_access = 3;
     optional uint64 ifmap_access = 4;
     optional uint64 psum_access = 5;
@@ -12,4 +12,5 @@ message Result {
     optional uint64 latency = 7;
     optional uint64 macs = 8;
     optional uint64 sim_time = 9;
+    optional uint64 dram_store_access = 10;
 }
